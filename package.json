@@ -1,6 +1,6 @@
 {
   "name": "with-context",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Decorator for new React Context API",
   "main": "index.js",
   "scripts": {
