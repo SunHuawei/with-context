@@ -1,9 +1,12 @@
 # with-context
-Best practice for new React Context API
+Best practice of new React Context API
 
 ## Why with-context?
-1. Make the usage more easier, consider it as your best practice
-2. Tiny, only 1.8k before compressed
+1. Less boilerplate/verbosity
+2. Make the usage more easier
+3. Tiny, only 1.8k before compressed
+
+Suggest considering `with-context` as your best practice.
 
 ## Live Demo
 Check here for online live demo: [https://jqkyy1oyv.codesandbox.io/](https://jqkyy1oyv.codesandbox.io/)
