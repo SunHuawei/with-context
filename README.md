@@ -3,10 +3,10 @@ Best practice for new React Context API
 
 ## Why with-context?
 1. Make the usage more easier, consider it as your best practice
-2. Tiny, only 2k before compressed
+2. Tiny, only 1.8k before compressed
 
 ## Live Demo
-<iframe src="https://codesandbox.io/embed/jqkyy1oyv" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+Check here for online live demo: [https://jqkyy1oyv.codesandbox.io/](https://jqkyy1oyv.codesandbox.io/)
 
 ## How to install
 

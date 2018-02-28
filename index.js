@@ -19,28 +19,20 @@ function _inherits(subClass, superClass) {
     }
 }
 
-function extend(obj, props) {
-    for (var i in props) {
-        obj[i] = props[i];
-    }
-}
-
 function wrap(Context, key, WrappedComp) {
     function Connected(props) {
         PureComponent.call(this, props);
     }
 
     _inherits(Connected, PureComponent);
-    extend(Connected.prototype, {
-        render: function render() {
-            var props = this.props;
-            return h(Context.Consumer, null, function (context) {
-                var tmpProps = {};
-                tmpProps[key] = context;
-                return h(WrappedComp, Object.assign(tmpProps, props));
-            });
-        }
-    });
+    Connected.prototype.render = function () {
+        var props = this.props;
+        return h(Context.Consumer, null, function (context) {
+            var tmpProps = {};
+            tmpProps[key] = context;
+            return h(WrappedComp, Object.assign(tmpProps, props));
+        });
+    };
 
     Connected.WrappedComp = WrappedComp;
     var wrappedCompName = WrappedComp.displayName || WrappedComp.name || "Component";
