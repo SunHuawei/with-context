@@ -29,9 +29,11 @@ export const ThemeContext = React.createContext("light");
 export const withTheme = withContext(ThemeContext, "theme");
 ```
 
-And then, use `withTheme` as a decorator on your leaf component `LeafComponent.js`. 
+Wrap your top component by `ThemeContext` just as the official demo.
 
-Then you could simply use `this.props.theme` in that component.
+And then, you could use `withTheme` for any leaf component which need theme.
+
+You could use it as a decorator on your leaf component `LeafComponent.js`. And then you could simply use `this.props.theme` in that component.
 
 ```jsx
 import { withTheme } from "./withTheme";
